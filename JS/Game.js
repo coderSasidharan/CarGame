@@ -66,6 +66,14 @@ class Game{
                             player.distance -=10 
                             player.update(); 
                           } 
+                        if(keyIsDown(LEFT_ARROW) && player.index !== null){ 
+                          player.x +=2 
+                          player.update(); 
+                        } 
+                        if(keyIsDown(RIGHT_ARROW) && player.index !== null){ 
+                            player.x -=2
+                            player.update(); 
+                          } 
                          /* if(player.playerDistance>3690){
                             gameState = 2;
                             console.log(gameState)
