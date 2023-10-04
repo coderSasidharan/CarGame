@@ -67,12 +67,12 @@ class Game{
                             player.update(); 
                           } 
                         if(keyIsDown(LEFT_ARROW) && player.index !== null){ 
-                          carsArray[index-1].x +=2 
+                          x +=2 
                           player.distance += 2
                           player.update(); 
                         } 
                         if(keyIsDown(RIGHT_ARROW) && player.index !== null){ 
-                            carsArray[index-1].x -=2
+                            x -=2
                             player.distance += 2
                             player.update(); 
                           } 
