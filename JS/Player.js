@@ -4,6 +4,7 @@ class Player{
         this.index = 0;
         this.distance = 0;
         this.carsAtEnd = null;
+        this.x = 0;
 
     }
     getCount(){
@@ -15,7 +16,8 @@ class Player{
         var details = 'players/player'+ this.index
         database.ref(details).set({
             playerName: this.name,
-            playerDistance: this.distance
+            playerDistance: this.distance,
+            playerX: this.x
         })
     }
     updateCount(count){
