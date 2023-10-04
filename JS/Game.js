@@ -46,7 +46,7 @@ class Game{
              var y;
              for(var plr in playerDetails){ 
                  index = index + 1 ; 
-                 x = playerDetails[plr].playerX + 200+x; 
+                 x = 200+x; 
                  y = displayHeight - playerDetails[plr].playerDistance; 
                  carsArray[index-1].x = x; 
                  carsArray[index-1].y = y; 
@@ -67,13 +67,13 @@ class Game{
                             player.update(); 
                           } 
                         if(keyIsDown(LEFT_ARROW) && player.index !== null){ 
-                          player.x +=2 
-                          player.distance += 2
+                          player.x -=8 
+                          player.distance += 4
                           player.update(); 
                         } 
                         if(keyIsDown(RIGHT_ARROW) && player.index !== null){ 
-                            player.x -=2
-                            player.distance += 2
+                            player.x +=8
+                            player.distance += 4
                             player.update(); 
                           } 
                          /* if(player.playerDistance>3690){
