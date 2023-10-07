@@ -69,12 +69,12 @@ class Game{
                           } 
                         if(keyIsDown(LEFT_ARROW) && player.index !== null){ 
                           player.x -=8 
-                          //player.distance += 4
+                          player.distance += 4
                           player.update(); 
                         } 
                         if(keyIsDown(RIGHT_ARROW) && player.index !== null){ 
                             player.x +=8
-                           // player.distance += 4
+                            player.distance += 4
                             player.update(); 
                           } 
                          /* if(player.playerDistance>3690){
