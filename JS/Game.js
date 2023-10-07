@@ -14,15 +14,19 @@ class Game{
             form.view();
         }
         car1 = createSprite(100,200)
+        World.add(world, car1);
         car1.addImage(c1)
 
         car2 = createSprite(300,200)
+         World.add(world, car2);
         car2.addImage(c2)
 
         car3 = createSprite(500,200)
+        World.add(world, car3);
         car3.addImage(c3)
 
         car4 = createSprite(700,200)
+        World.add(world, car4);
         car4.addImage(c4)
 
 
