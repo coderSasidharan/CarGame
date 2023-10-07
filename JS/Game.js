@@ -66,54 +66,102 @@ class Game{
             
          
         if(player.index == 1 && car1.isTouching(car2)){
-              player.x -= 14
+            if(car1.x<car2.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 1 && car1.isTouching(car3)){
-              player.x -= 14
+              if(car1.x<car3.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 1 && car1.isTouching(car4)){
-              player.x -= 14
+              if(car1.x<car4.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
 
         if(player.index == 2 && car2.isTouching(car1)){
-              player.x -= 14
+              if(car2.x<car1.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 2 && car2.isTouching(car3)){
-              player.x -= 14
+              if(car2.x<car3.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 2 && car2.isTouching(car4)){
-              player.x -= 14
+              if(car2.x<car4.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
 
         if(player.index == 3 && car3.isTouching(car1)){
-              player.x += 14
+             if(car3.x<car1.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 3 && car3.isTouching(car2)){
-              player.x += 14
+             if(car3.x<car2.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 3 && car3.isTouching(car4)){
-              player.x += 14
+              if(car3.x<car4.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
 
         if(player.index == 4 && car4.isTouching(car1)){
-              player.x += 14
+              if(car4.x<car1.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 4 && car4.isTouching(car2)){
-              player.x += 14
+              if(car4.x<car2.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
         if(player.index == 4 && car4.isTouching(car3)){
-              player.x += 14
+              if(car4.x<car3.x){
+                player.x -= 14
+            }else{
+                player.x += 14
+            }
               player.update();
           }
 
