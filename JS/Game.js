@@ -1,3 +1,9 @@
+const Engine = Matter.Engine;
+const World= Matter.World;
+const Bodies = Matter.Bodies;
+
+
+
 class Game{
     constructor(){
     }
@@ -13,6 +19,11 @@ class Game{
             player.getCount();
             form.view();
         }
+        var engine, world;
+
+        engine = Engine.create();
+        world = engine.world;
+        
         car1 = createSprite(100,200)
         World.add(world, car1);
         car1.addImage(c1)
