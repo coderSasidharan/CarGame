@@ -63,56 +63,57 @@ class Game{
           }
 
 
+            
         
          
-        if(player.x == car1.x && car1.isTouching(car2)){
+        if(player.index == 1 && car1.isTouching(car2)){
               player.x -= 8
               player.update();
           }
-        if(player.x == car1.x && car1.isTouching(car3)){
+        if(player.index == 1 && car1.isTouching(car3)){
               player.x -= 8
               player.update();
           }
-        if(player.x == car1.x && car1.isTouching(car4)){
-              player.x -= 8
-              player.update();
-          }
-
-        if(player.x == car2.x && car2.isTouching(car1)){
-              player.x -= 8
-              player.update();
-          }
-        if(player.x == car2.x && car2.isTouching(car3)){
-              player.x -= 8
-              player.update();
-          }
-        if(player.x == car2.x && car2.isTouching(car4)){
+        if(player.index == 1 && car1.isTouching(car4)){
               player.x -= 8
               player.update();
           }
 
-        if(player.x == car3.x && car3.isTouching(car1)){
+        if(player.index == 2 && car2.isTouching(car1)){
+              player.x -= 8
+              player.update();
+          }
+        if(player.index == 2 && car2.isTouching(car3)){
+              player.x -= 8
+              player.update();
+          }
+        if(player.index == 2 && car2.isTouching(car4)){
+              player.x -= 8
+              player.update();
+          }
+
+        if(player.index == 3 && car3.isTouching(car1)){
               player.x += 8
               player.update();
           }
-        if(player.x == car3.x && car3.isTouching(car2)){
+        if(player.index == 3 && car3.isTouching(car2)){
               player.x += 8
               player.update();
           }
-        if(player.x == car3.x && car3.isTouching(car4)){
+        if(player.index == 3 && car3.isTouching(car4)){
               player.x += 8
               player.update();
           }
 
-        if(player.x == car4.x && car4.isTouching(car1)){
+        if(player.index == 4 && car4.isTouching(car1)){
               player.x += 8
               player.update();
           }
-        if(player.x == car4.x && car4.isTouching(car2)){
+        if(player.index == 4 && car4.isTouching(car2)){
               player.x += 8
               player.update();
           }
-        if(player.x == car4.x && car4.isTouching(car3)){
+        if(player.index == 4 && car4.isTouching(car3)){
               player.x += 8
               player.update();
           }
