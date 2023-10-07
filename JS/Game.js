@@ -245,8 +245,13 @@ class Game{
             drawSprites(); 
         }
     end(){
-      
-        //game.updateGameState(2)
+      var place;
+      database.ref('finished').on("value",(data)=>{
+            place = data.val()
+        })
+      this.greeting.html("YOUR PLACE: "+place)
+      this.greeting.position(displayWidth/2-70,displayHeight/4)
+        
     }
     
 }
