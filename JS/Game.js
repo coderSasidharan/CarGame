@@ -66,54 +66,54 @@ class Game{
             
          
         if(player.index == 1 && car1.isTouching(car2)){
-              player.x -= 60
+              player.x -= 14
               player.update();
           }
         if(player.index == 1 && car1.isTouching(car3)){
-              player.x -= 60
+              player.x -= 14
               player.update();
           }
         if(player.index == 1 && car1.isTouching(car4)){
-              player.x -= 60
+              player.x -= 14
               player.update();
           }
 
         if(player.index == 2 && car2.isTouching(car1)){
-              player.x -= 60
+              player.x -= 14
               player.update();
           }
         if(player.index == 2 && car2.isTouching(car3)){
-              player.x -= 60
+              player.x -= 14
               player.update();
           }
         if(player.index == 2 && car2.isTouching(car4)){
-              player.x -= 60
+              player.x -= 14
               player.update();
           }
 
         if(player.index == 3 && car3.isTouching(car1)){
-              player.x += 60
+              player.x += 14
               player.update();
           }
         if(player.index == 3 && car3.isTouching(car2)){
-              player.x += 60
+              player.x += 14
               player.update();
           }
         if(player.index == 3 && car3.isTouching(car4)){
-              player.x += 60
+              player.x += 14
               player.update();
           }
 
         if(player.index == 4 && car4.isTouching(car1)){
-              player.x += 60
+              player.x += 14
               player.update();
           }
         if(player.index == 4 && car4.isTouching(car2)){
-              player.x += 60
+              player.x += 14
               player.update();
           }
         if(player.index == 4 && car4.isTouching(car3)){
-              player.x += 60
+              player.x += 14
               player.update();
           }
 
@@ -123,7 +123,7 @@ class Game{
 
         
           if(keyIsDown(UP_ARROW) && player.index !== null){ 
-              player.distance +=12 
+              player.distance +=10 
               player.update(); 
             } 
             if(keyIsDown(DOWN_ARROW) && player.index !== null){ 
@@ -131,15 +131,24 @@ class Game{
                 player.update(); 
               } 
             if(keyIsDown(LEFT_ARROW) && player.index !== null){ 
-              player.x -=15 
-              player.distance += 5
+              player.x -=13 
+              player.distance += 4
               player.update(); 
             } 
             if(keyIsDown(RIGHT_ARROW) && player.index !== null){ 
-                player.x +=15
-                player.distance += 5
+                player.x +=13
+                player.distance += 4
                 player.update(); 
               } 
+
+
+           console.log(car1.x);
+           console.log(car2.x);
+           console.log(car3.x);
+           console.log(car4.x);
+
+
+        
             if(player.distance>3690){
                 gameState = 2
                 if(player.carsAtEnd<4){
