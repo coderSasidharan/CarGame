@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  if(gameState != 2 && playerCount === 4){
+  if(playerCount === 4){
     game.updateGameState(1)
   }
   if(gameState=== 1){
