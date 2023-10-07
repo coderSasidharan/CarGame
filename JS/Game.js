@@ -66,19 +66,19 @@ class Game{
         var index = 0;
         for(var plr in playerDetails){
             index = index +1;
-             if(i!=0 && carsArray[index-1].isTouching(car1)){
+             if(i-1!=0 && carsArray[index-1].isTouching(car1)){
               player.x -= 8
               player.update();
               }
-            if(i!=1 && carsArray[index-1].isTouching(car2)){
+            if(i-1!=1 && carsArray[index-1].isTouching(car2)){
                   player.x -= 8
                   player.update();
               }
-            if(i!=2 && carsArray[index-1].isTouching(car3)){
+            if(i-1!=2 && carsArray[index-1].isTouching(car3)){
                   player.x -= 8
                   player.update();
               }
-            if(i!=3 && carsArray[index-1].isTouching(car4)){
+            if(i-1!=3 && carsArray[index-1].isTouching(car4)){
                   player.x -= 8
                   player.update();
               }
