@@ -63,15 +63,54 @@ class Game{
           }
 
           if(car1.isTouching(car2)){
-              player.x = player.x*(-1)
+              player.x -= 8
               player.update();
           }
         if(car1.isTouching(car3)){
-              player.x = player.x*(-1)
+              player.x -= 8
               player.update();
           }
         if(car1.isTouching(car4)){
-              player.x = player.x*(-1)
+              player.x -= 8
+              player.update();
+          }
+        
+        if(car2.isTouching(car1)){
+              player.x -= 8
+              player.update();
+          }
+        if(car2.isTouching(car3)){
+              player.x -= 8
+              player.update();
+          }
+        if(car2.isTouching(car4)){
+              player.x -= 8
+              player.update();
+          }
+
+        if(car3.isTouching(car1)){
+              player.x += 8
+              player.update();
+          }
+        if(car3.isTouching(car2)){
+              player.x += 8
+              player.update();
+          }
+        if(car3.isTouching(car4)){
+              player.x += 8
+              player.update();
+          }
+
+        if(car4.isTouching(car1)){
+              player.x += 8
+              player.update();
+          }
+        if(car4.isTouching(car2)){
+              player.x += 8
+              player.update();
+          }
+        if(car4.isTouching(car3)){
+              player.x += 8
               player.update();
           }
 
