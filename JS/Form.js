@@ -17,7 +17,7 @@ class Form{
         this.button.position(displayWidth/2+30,displayHeight/2)
         var title = createElement('h2');
         title.position(displayWidth/2-50,0)
-        title.html("Multiplayer Online Car Race")
+        title.html("Multiplayer Online Car Race0")
         this.reset.position(displayWidth-100,20);
         this.button.mousePressed(()=>{
             this.input.hide();
