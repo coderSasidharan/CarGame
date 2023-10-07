@@ -62,29 +62,64 @@ class Game{
                  }
           }
 
+
+        
          
-        var index = 0;
-        for(var plr in playerDetails){
-            index = index +1;
-             if(i-1!=0 && carsArray[index-1].isTouching(car1)){
+        if(player.x == car1.x && car1.isTouching(car2)){
               player.x -= 8
               player.update();
-              }
-            if(i-1!=1 && carsArray[index-1].isTouching(car2)){
-                  player.x -= 8
-                  player.update();
-              }
-            if(i-1!=2 && carsArray[index-1].isTouching(car3)){
-                  player.x -= 8
-                  player.update();
-              }
-            if(i-1!=3 && carsArray[index-1].isTouching(car4)){
-                  player.x -= 8
-                  player.update();
-              }
-            
-        }
+          }
+        if(player.x == car1.x && car1.isTouching(car3)){
+              player.x -= 8
+              player.update();
+          }
+        if(player.x == car1.x && car1.isTouching(car4)){
+              player.x -= 8
+              player.update();
+          }
 
+        if(player.x == car2.x && car2.isTouching(car1)){
+              player.x -= 8
+              player.update();
+          }
+        if(player.x == car2.x && car2.isTouching(car3)){
+              player.x -= 8
+              player.update();
+          }
+        if(player.x == car2.x && car2.isTouching(car4)){
+              player.x -= 8
+              player.update();
+          }
+
+        if(player.x == car3.x && car3.isTouching(car1)){
+              player.x += 8
+              player.update();
+          }
+        if(player.x == car3.x && car3.isTouching(car2)){
+              player.x += 8
+              player.update();
+          }
+        if(player.x == car3.x && car3.isTouching(car4)){
+              player.x += 8
+              player.update();
+          }
+
+        if(player.x == car4.x && car4.isTouching(car1)){
+              player.x += 8
+              player.update();
+          }
+        if(player.x == car4.x && car4.isTouching(car2)){
+              player.x += 8
+              player.update();
+          }
+        if(player.x == car4.x && car4.isTouching(car3)){
+              player.x += 8
+              player.update();
+          }
+
+
+
+        
 
         
           if(keyIsDown(UP_ARROW) && player.index !== null){ 
