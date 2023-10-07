@@ -64,7 +64,6 @@ class Game{
 
 
             
-        console.log(player.x);
          
         if(player.index == 1 && car1.isTouching(car2)){
               player.x -= 60
