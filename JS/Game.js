@@ -191,38 +191,38 @@ class Game{
 
 
           if(player.index == 1 && car1.x<260){
-              player.x +=14
+              player.x +=13
               player.update();
           }
           if(player.index == 1 && car1.x>1280){
-              player.x -=14
+              player.x -=13
               player.update();
           }
         
         if(player.index == 2 && car2.x<260){
-              player.x +=14
+              player.x +=13
               player.update();
           }
           if(player.index == 2 && car2.x>1280){
-              player.x -=14
+              player.x -=13
               player.update();
           }
 
         if(player.index == 3 && car3.x<260){
-              player.x +=14
+              player.x +=13
               player.update();
           }
           if(player.index == 3 && car3.x>1280){
-              player.x -=14
+              player.x -=13
               player.update();
           }
 
         if(player.index == 4 && car4.x<260){
-              player.x +=14
+              player.x +=13
               player.update();
           }
           if(player.index == 4 && car4.x>1280){
-              player.x -=14
+              player.x -=13
               player.update();
           }
 
