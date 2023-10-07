@@ -1,3 +1,9 @@
+const Engine = Matter.Engine;
+const World= Matter.World;
+const Bodies = Matter.Bodies;
+
+var engine, world;
+
 var database, form, player,game, gameState = 0, playerCount = 0, playerDetails, distance=0
 
 var car1, car2, car3, car4, carsArray, c1, c2, c3, c4, track
@@ -12,6 +18,8 @@ function preload(){
 
 function setup() {
   createCanvas(displayWidth-20,displayHeight-20);
+  engine = Engine.create();
+  world = engine.world;
   database = firebase.database()
   game = new Game()
   game.getState()
@@ -19,6 +27,7 @@ function setup() {
 }
 
 function draw() {
+  Engine.update(engine);
   if(playerCount === 4){
     game.updateGameState(1)
   }
