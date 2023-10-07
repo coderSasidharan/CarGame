@@ -59,46 +59,58 @@ class Game{
                      ellipse(carsArray[index-1].x,carsArray[index-1].y,70,70)
                      camera.position.x = displayWidth/2; 
                      camera.position.y = carsArray[index-1].y }
-                     }
-                     }
-                      if(keyIsDown(UP_ARROW) && player.index !== null){ 
-                          player.distance +=10 
-                          player.update(); 
-                        } 
-                        if(keyIsDown(DOWN_ARROW) && player.index !== null){ 
-                            player.distance -=10 
-                            player.update(); 
-                          } 
-                        if(keyIsDown(LEFT_ARROW) && player.index !== null){ 
-                          player.x -=8 
-                          player.distance += 4
-                          player.update(); 
-                        } 
-                        if(keyIsDown(RIGHT_ARROW) && player.index !== null){ 
-                            player.x +=8
-                            player.distance += 4
-                            player.update(); 
-                          } 
-                         /* if(player.playerDistance>3690){
-                            gameState = 2;
-                            console.log(gameState)
-                        }*/
-                        if(player.distance>3690){
-                            gameState = 2
-                            if(player.carsAtEnd<4){
+                 }
+          }
 
-                        
-                            player.carsAtEnd += 1
-                            }
-                            Player.finished(player.carsAtEnd);
+          if(car1.isTouching(car2)){
+              player.x = player.x*(-1)
+              player.update();
+          }
+        if(car1.isTouching(car3)){
+              player.x = player.x*(-1)
+              player.update();
+          }
+        if(car1.isTouching(car4)){
+              player.x = player.x*(-1)
+              player.update();
+          }
 
-                        }
-                        if(player.carsAtEnd === 4){
-                            game.updateGameState(2)
 
-                        }
-                        drawSprites(); 
-                    }
+        
+          if(keyIsDown(UP_ARROW) && player.index !== null){ 
+              player.distance +=10 
+              player.update(); 
+            } 
+            if(keyIsDown(DOWN_ARROW) && player.index !== null){ 
+                player.distance -=10 
+                player.update(); 
+              } 
+            if(keyIsDown(LEFT_ARROW) && player.index !== null){ 
+              player.x -=8 
+              player.distance += 4
+              player.update(); 
+            } 
+            if(keyIsDown(RIGHT_ARROW) && player.index !== null){ 
+                player.x +=8
+                player.distance += 4
+                player.update(); 
+              } 
+            if(player.distance>3690){
+                gameState = 2
+                if(player.carsAtEnd<4){
+
+            
+                player.carsAtEnd += 1
+                }
+                Player.finished(player.carsAtEnd);
+
+            }
+            if(player.carsAtEnd === 4){
+                game.updateGameState(2)
+
+            }
+            drawSprites(); 
+        }
     end(){
       
         //game.updateGameState(2)
