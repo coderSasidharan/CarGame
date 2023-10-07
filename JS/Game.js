@@ -228,7 +228,7 @@ class Game{
 
 
         
-            if(player.distance>3690){
+            if(player.distance>4690){
                 gameState = 2
                 if(player.carsAtEnd<4){
 
