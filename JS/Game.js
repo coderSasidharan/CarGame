@@ -47,8 +47,7 @@ class Game{
              var y;
              for(var plr in playerDetails){ 
                  index = index + 1 ; 
-                 x = 200+x+playerDetails[plr].playerX;
-                 s+= 200;
+                 x = 200+x;
                  y = displayHeight - playerDetails[plr].playerDistance; 
                  carsArray[index-1].x = x; 
                  carsArray[index-1].y = y; 
