@@ -43,7 +43,7 @@ class Game{
              background("green")
              image(track,0,-displayHeight*4,displayWidth,displayHeight*5)
              var index = 0; 
-             var x+200; 
+             var x = x+200; 
              var y;
              for(var plr in playerDetails){ 
                  index = index + 1 ; 
