@@ -44,11 +44,11 @@ class Game{
              image(track,0,-displayHeight*4,displayWidth,displayHeight*5)
              var index = 0; 
              var s = 200; 
-             var x+200; 
+             var x = 200; 
              var y;
              for(var plr in playerDetails){ 
                  index = index + 1 ; 
-                 x = 200+s+playerDetails[plr].playerX; 
+                 x = 300+s+playerDetails[plr].playerX; 
                  s+= 200;
                  y = displayHeight - playerDetails[plr].playerDistance; 
                  carsArray[index-1].x = x; 
