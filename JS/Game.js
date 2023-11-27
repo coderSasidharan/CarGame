@@ -194,7 +194,7 @@ class Game{
               player.x +=13
               player.update();
           }
-        console.log(car1.x);
+       
           if(player.index == 1 && car1.x>1605){
               player.x -=13
               player.update();
@@ -228,8 +228,8 @@ class Game{
           }
 
 
-        
-            if(player.distance>4690){
+         console.log(player.distance);
+            if(player.distance>9000){
                 gameState = 2
                 if(player.carsAtEnd<4){
 
