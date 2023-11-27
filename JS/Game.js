@@ -250,6 +250,7 @@ class Game{
       database.ref('finished').on("value",(data)=>{
             place = data.val()
         })
+      this.greeting = createElement('h2')
       this.greeting.html("YOUR PLACE: "+place)
       this.greeting.position(displayWidth/2-70,displayHeight/4)
         
