@@ -240,7 +240,7 @@ class Game{
 
             }
             if(player.carsAtEnd === 4){
-                game.updateGameState(2)
+                game.updateGameState(2);
 
             }
             drawSprites(); 
