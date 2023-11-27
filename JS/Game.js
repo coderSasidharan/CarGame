@@ -195,7 +195,7 @@ class Game{
               player.update();
           }
         console.log(car1.x);
-          if(player.index == 1 && car1.x>1680){
+          if(player.index == 1 && car1.x>1605){
               player.x -=13
               player.update();
           }
@@ -204,7 +204,7 @@ class Game{
               player.x +=13
               player.update();
           }
-          if(player.index == 2 && car2.x>1680){
+          if(player.index == 2 && car2.x>1605){
               player.x -=13
               player.update();
           }
@@ -213,7 +213,7 @@ class Game{
               player.x +=13
               player.update();
           }
-          if(player.index == 3 && car3.x>1680){
+          if(player.index == 3 && car3.x>1605){
               player.x -=13
               player.update();
           }
@@ -222,7 +222,7 @@ class Game{
               player.x +=13
               player.update();
           }
-          if(player.index == 4 && car4.x>1680){
+          if(player.index == 4 && car4.x>1605){
               player.x -=13
               player.update();
           }
