@@ -194,6 +194,7 @@ class Game{
               player.x +=13
               player.update();
           }
+        console.log(car1.x);
           if(player.index == 1 && car1.x>1280){
               player.x -=13
               player.update();
