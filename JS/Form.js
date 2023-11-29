@@ -31,10 +31,10 @@ class Form{
             player.update()
             player.updateCount(playerCount)
             
-            this.greeting.html("Details Uploaded "+player.name+ "   Players: "+playerCount+"/4")
-            this.greeting.position(displayWidth/2-100,displayHeight/4)
-            this.rules.html("Rules:\n Use arrow Keys to move\n Moving diagonally is faster ")
-            this.rules.position(displayWidth/2-100,displayHeight/4+50)
+            this.greeting.html("Details Uploaded "+player.name+ <br/> +"Player: "+playerCount+"/4")
+            this.greeting.position(displayWidth/2-100,displayHeight/4-50)
+            this.rules.html("Rules:"+ <br/> +"Use arrow Keys to move"+ <br/> +"Moving diagonally is faster ")
+            this.rules.position(displayWidth/2-70,displayHeight/4+50)
         })
         this.reset.mousePressed(()=>{
             game.updateGameState(0);
