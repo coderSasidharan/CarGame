@@ -31,9 +31,9 @@ class Form{
             player.update()
             player.updateCount(playerCount)
             
-            this.greeting.html("Details Uploaded "+player.name+ ".<br/>" +"Player: "+playerCount+"/4")
+            this.greeting.html("Details Uploaded "+player.name +"Player: "+playerCount+"/4")
             this.greeting.position(displayWidth/2-100,displayHeight/4-50)
-            this.rules.html("Rules:"+ ".<br/>" +"Use arrow Keys to move"+ ".<br/>" +"Moving diagonally is faster ")
+            this.rules.html("Rules: Use arrow Keys to move. Moving diagonally is faster")
             this.rules.position(displayWidth/2-70,displayHeight/4+50)
         })
         this.reset.mousePressed(()=>{
