@@ -4,6 +4,8 @@ class Form{
         this.button = createButton("play")
         this.greeting = createElement('h2')
         this.reset = createButton("reset")
+        this.rules = createElement('h4')
+
     }
     hide(){
         this.input.hide();
@@ -28,8 +30,10 @@ class Form{
             player.update()
             player.updateCount(playerCount)
             
-            this.greeting.html("Details Uploaded"+player.name)
+            this.greeting.html("Details Uploaded "+player.name+ "Players: "+playerCount+"/4")
             this.greeting.position(displayWidth/2-70,displayHeight/4)
+            this.rules.html("Use arrow Keys to move")
+            this.rules.position(displayWidth/2-70,displayHeight/4+50)
         })
         this.reset.mousePressed(()=>{
             game.updateGameState(0);
