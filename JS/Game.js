@@ -229,7 +229,7 @@ class Game{
 
 
          console.log(player.distance);
-            if(player.distance>5000){
+            if(player.distance>5350){
                 gameState = 2
                 if(player.carsAtEnd<4){
 
